@@ -1,0 +1,19 @@
+plugin.tx_jhtheanswer {
+	view {
+		# cat=plugin.tx_jhtheanswer/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:jh_theanswer/Resources/Private/Templates/
+		# cat=plugin.tx_jhtheanswer/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:jh_theanswer/Resources/Private/Partials/
+		# cat=plugin.tx_jhtheanswer/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:jh_theanswer/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_jhtheanswer//a; type=string; label=Default storage PID
+		storagePid =
+	}
+
+	settings {
+		theAnswerUid = 1
+		magicNumber = 10
+	}
+}

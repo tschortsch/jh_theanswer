@@ -1,0 +1,43 @@
+plugin.tx_jhtheanswer {
+	view {
+		templateRootPath = {$plugin.tx_jhtheanswer.view.templateRootPath}
+		partialRootPath = {$plugin.tx_jhtheanswer.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_jhtheanswer.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_jhtheanswer.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+		theAnswerUid = {$plugin.tx_jhtheanswer.settings.theAnswerUid}
+		magicalValue = {$plugin.tx_jhtheanswer.settings.magicNumber}
+	}
+}
+
+plugin.tx_jhtheanswer._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-jh-theanswer table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-jh-theanswer table th {
+		font-weight:bold;
+	}
+
+	.tx-jh-theanswer table td {
+		vertical-align:top;
+	}
+)
